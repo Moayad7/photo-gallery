@@ -19,7 +19,7 @@ const Home_gallery = () => {
             </Modal>
             {ids.map(id=>(
                 <div className='col-4 col-lg-2 p-0'>
-                    <a className='photoMove' onClick={() => {setUrl(`https://picsum.photos/id/${id}/900/550`); setModal(true);}} key={id} href='#'><img className='w-100 p-1' src={`https://picsum.photos/id/${id}/500/300`}></img></a>
+                    <div className='photoMove' onClick={() => {setUrl(`https://picsum.photos/id/${id}/900/550`); setModal(true);}} key={id}><img className='w-100 p-1' src={`https://picsum.photos/id/${id}/500/300`}></img></div>
                 </div>
             ))}
         </div>
