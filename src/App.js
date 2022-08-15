@@ -15,7 +15,7 @@ const App = () => {
         <div className='container'>
           <Navbar/>
           <Routes>
-            <Route path="/" element={<Home/>}/>
+            <Route path={"/" || "photo-gallery"} element={<Home/>}/>
             <Route path="gallery" element={<Gallery/>}/>
             <Route path="slider" element={<Slider/>}/>
           </Routes>

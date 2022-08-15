@@ -9,7 +9,7 @@ const Navbar_items = () => {
     <div className='d-lg-flex'>
       {pages.map(page => (
         <li key={Math.floor(Math.random()*100)+1} className='nav-item'>
-          <Link className="nav-link" to={page=='Home'? '/' : page}>{page}</Link>
+          <Link className="nav-link" to={page=='Home'? 'photo-gallery' : page}>{page}</Link>
         </li>
       ))}
     </div>
