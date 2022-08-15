@@ -2,7 +2,7 @@ import React from 'react'
 
 const MODAL_STYLES = {
     position: 'fixed',
-    top: '50%',
+    top: '30%',
     left: '50%',
     transform: 'translate(-50%, -60%)',
     backgroundColor: 'FFF',
