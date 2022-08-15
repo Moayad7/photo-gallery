@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.w-logo{
+    width: 36px;
+}
+
+.photoMove img{
+    opacity: 0.5;
+}
+
+.photoMove img:hover{
+    transform: translate(0,-10px);
+    opacity: 1;
+    transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    position: relative;
+    z-index: 10;
+}
+
+.scale{
+    animation-name: scaling;
+    animation-duration: 1s;
+    transform: scale(1);
+}
+
+@keyframes scaling {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+    100%{transform: scale(1);}
+}
+
+.color{
+    animation-name: coloring;
+    animation-duration: 1s;
+    color: #3e62ff;
+}
+
+@keyframes coloring {
+    0% {color:yellow; transform: scale(1);}
+    50% {color: red; transform: scale(1.05);}
+    100% {color: #3e62ff; transform: scale(1);}
+  }
+  
+.be-visible{
+    transform: scale(0);
+    transition: all 0.3s ease-out 0s;
+    cursor: pointer;
+    background-color: black;
+}
+  
+
+
+.vis:hover .be-visible{
+    transform: scale(1);
+    z-index: 11;
+}
+
+@media screen and (max-width:991px) {
+    .be-visible{
+        transform: scale(1);
+        background-color: transparent;
+        text-shadow: 2px 2px 2px black;
+    }
+}
