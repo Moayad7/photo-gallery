@@ -8,7 +8,7 @@ const Slider_body = () => {
     <div className='d-flex align-items-center mb-5 justify-content-center scale'> 
         <SimpleImageSlider
             width={`100%`}
-            height={300}
+            height={500}
             images={photos.map(photo=>`https://picsum.photos/id/${photo}/1000/500`)}
             showBullets={true}
             showNavs={true}
